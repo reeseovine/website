@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  islet:
+    build: .
+    restart: unless-stopped
+    user: "node"
+    volumes:
+      - "./islet/posts:/app/posts"
+      - "./islet/config:/app/config"
+    ports:
+      - "83:5000"

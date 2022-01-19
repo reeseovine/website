@@ -11,22 +11,30 @@ let getPostDate = (slug) => {
 		let monthSlice = slug.slice(5, 7);
 		let month = "";
 		switch (monthSlice){
-			case "01": month = "Jan"; break;
-			case "02": month = "Feb"; break;
-			case "03": month = "Mar"; break;
-			case "04": month = "Apr"; break;
+			case "01": month = "January"; break;
+			case "02": month = "February"; break;
+			case "03": month = "March"; break;
+			case "04": month = "April"; break;
 			case "05": month = "May"; break;
-			case "06": month = "Jun"; break;
-			case "07": month = "Jul"; break;
-			case "08": month = "Aug"; break;
-			case "09": month = "Sep"; break;
-			case "10": month = "Oct"; break;
-			case "11": month = "Nov"; break;
-			case "12": month = "Dec"; break;
+			case "06": month = "June"; break;
+			case "07": month = "July"; break;
+			case "08": month = "August"; break;
+			case "09": month = "September"; break;
+			case "10": month = "October"; break;
+			case "11": month = "November"; break;
+			case "12": month = "December"; break;
 			default: console.warn(`"${monthSlice}" in "${slug}" is not a valid month! Please double-check so that it will display properly.`);
 		}
 
-		return slug.slice(8, 10) + " " + month + ", " + slug.slice(0,4);
+		// Generate ordinal form (1st, 2nd, etc)
+		let daySlice = slug.slice(8, 10);
+		let day = "";
+		if (daySlice.slice(-1) === "1" && daySlice !== "11"){ day = daySlice+"st"; }
+		else if (daySlice.slice(-1) === "2" && daySlice !== "12"){ day = daySlice+"nd"; }
+		else if (daySlice.slice(-1) === "3" && daySlice !== "13"){ day = daySlice+"rd"; }
+		else { day = daySlice+"th"; }
+		
+		return `${month} ${day}, ${slug.slice(0,4)}`;
 	} else {
 		return "";
 	}

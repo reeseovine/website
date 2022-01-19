@@ -24,6 +24,14 @@
 		<% } else { %>
 			<link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
 		<% } %>
+		<style>
+#header {
+  background-image: url('../images/ovine-48.png');
+	background-position: right 12px bottom;
+	background-repeat: no-repeat;
+  padding: 0.8em 72px 0.8em 0;
+}
+		</style>
 	</head>
 	<body <% if (config.backgroundImage && config.backgroundImage.length > 0){ -%>
 		style="background-image: url('<%= config.backgroundImage %>') !important;"
