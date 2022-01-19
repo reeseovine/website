@@ -141,16 +141,17 @@ let makeConfigFile = () => {
 	}
 }
 
-let readUserConfig = () => {
+let getConfigFile = () => {
 	try {
 		return YAML.parse(fs.readFileSync('./config/config.yml', 'utf8'));
 	} catch (e){
 		console.error("Error when trying to read the config file:");
 		console.error(e);
 	}
+	return {};
 }
 
-let getEnvConfig = (defaultConf) => {
+let getEnvConfig = () => {
 	let envConf = {};
 	for (var section of defaultStructure){
 		for (var item of section.items){
@@ -160,12 +161,12 @@ let getEnvConfig = (defaultConf) => {
 			}
 		}
 	}
-	return Object.assign(defaultConf, envConf);
+	return envConf;
 }
 
 let init = () => {
 	makeConfigFile();
-	return getEnvConfig(readUserConfig());
+	return Object.assign(getConfigFile(), getEnvConfig());
 }
 
 module.exports = {init};

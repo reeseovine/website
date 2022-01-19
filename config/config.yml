@@ -1,0 +1,28 @@
+# Edit the values below to customize your islet!
+
+## Basic info ##
+blogName: "reese's rambling macroblog"
+authorName: "reese sapphire"
+authorLink: "https://twitter.com/reeseovine" # Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+
+## Theme customization ##
+themeURL: /style/morningNews.css # Link to a theme file. Can be relative (on this server) or absolute (somewhere on the web)
+backgroundImage: "" # Optional, uses theme default if left blank.
+
+## Navigation ##
+headerLinks:
+  - path: /
+    name: Home
+  - path: /archive
+    name: Archive
+  - path: /posts/2021-12-16-Hello,-world!
+    name: About
+recentPostsCutoff: 5
+
+## Behind the scenes stuff ##
+serverPort: 80
+metaDescription: # This description is not directly visible on the page, but it can show up in certain places like search engines.
+  "this is my blog where i post about random topics that interest me!"
+truncateSummaryAt: 280 # Maximum length of the post summary that's used in the meta description tag for blog post pages.
+language: en-US # The language you primarily write in. Not required but recommended.
+blogURL: "https://blog.ovine.xyz" # The web address of this blog, used for links in the RSS feed.
