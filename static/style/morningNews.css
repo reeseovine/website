@@ -1,14 +1,37 @@
 /* This theme was made by reese! */
 
 body {
-	background-color: #f3f3f3;
 	/* Background image credit to Kiwihug: https://unsplash.com/photos/zGZYQQVmXw0 - Edited by Reese to be tileable */
-	background-image: url('../images/bg_morningNews.jpg');
+	background-image: #f3f3f3 url('../images/bg_morningNews.jpg');
 	background-position: top center;
 	font-size: 20px;
 	font-family: "Calisto", "Garamond", "EB Garamond", "Times", serif;
 	color: #222;
 	margin: 0;
+	height: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: linear-gradient(to right, #161616, #161616), url('../images/bg_morningNews.jpg');
+		background-blend-mode: hard-light;
+		color: #d3cfc9;
+	}
+
+	#header, #footer, table, th, td {
+		border-color: #777 !important;
+	}
+
+	#nextprev {
+		color: #777 !important;
+	}
+
+	a[href] {
+		color: #4396ff !important;
+	}
+	a[href]:visited {
+		color:  #b26fff !important;
+	}
 }
 
 /* LAYOUT */
@@ -50,6 +73,9 @@ img {
 	margin-bottom: 0.5em;
 }
 
+table, figure {
+	width: 100%;
+}
 table, th, td {
 	border: 1px solid #333;
 	border-spacing: 0;

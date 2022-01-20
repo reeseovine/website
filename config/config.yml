@@ -20,7 +20,7 @@ headerLinks:
 recentPostsCutoff: 5
 
 ## Behind the scenes stuff ##
-serverPort: 80
+serverPort: 5000
 metaDescription: # This description is not directly visible on the page, but it can show up in certain places like search engines.
   "this is my blog where i post about random topics that interest me!"
 truncateSummaryAt: 280 # Maximum length of the post summary that's used in the meta description tag for blog post pages.
