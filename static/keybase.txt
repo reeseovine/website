@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/reeseovine
+--------------------------------------------------------------------
+
+I hereby claim:
+
+	* I am an admin of https://blog.ovine.xyz
+	* I am reeseovine (https://keybase.io/reeseovine) on keybase.
+	* I have a public key with fingerprint B7DD B2AC 8950 AF84 9E50  3FBE 5103 DA93 1633 CF45
+
+To do so, I am signing this object:
+
+{
+	"body": {
+		"key": {
+			"eldest_kid": "0101d4097adf917b2406a61ffcebbe160664bd0b8fd15f29b6c7317860e6aa0daada0a",
+			"fingerprint": "b7ddb2ac8950af849e503fbe5103da931633cf45",
+			"host": "keybase.io",
+			"key_id": "5103da931633cf45",
+			"kid": "0101d4097adf917b2406a61ffcebbe160664bd0b8fd15f29b6c7317860e6aa0daada0a",
+			"uid": "a690d52a1570d65b35779ee41ecfbb19",
+			"username": "reeseovine"
+		},
+		"service": {
+			"hostname": "blog.ovine.xyz",
+			"protocol": "https:"
+		},
+		"type": "web_service_binding",
+		"version": 1
+	},
+	"ctime": 1651175326,
+	"expire_in": 157680000,
+	"prev": "ef7be26c58885f145cfa77e78a4e50d7286509519be979d9213c14104c28518c",
+	"seqno": 10,
+	"tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIpAnicrZJbbA1BGMdPL26NhlLqkkisIKleZnZ3ZnZPQxMkRIhKXBItx8zO7Oke
+x9nTs3uqN1RUVKKNqISk9CASKU88CJWIViNUolKNSnhRnry4PQgaMdvw5tG8TOab
+//833/fNN5ifE8rLKjWOZGLPxY6sp/0X0iEW+9jTrDCXNyrhZmW/mNxEnAvPj+x3
+uBJWAASQ68AklNsmJEzVAaYY2rYlGBMQA4x1xgEzbA6RrZoMW0SDxMBAYEoBp5RT
+QJUSxXYSUZFKppyEL7GMcM5UahkmAtQ2dFMgoNlMIAg0Tk0NYk2zbB1JY63rBQ6Z
+HKOeKHNcGZOHyGR6/9D/57zTkziKTcCRSiEigGPENESIKYQOhWUzBs1A6IlUgh4Q
+Up0SwhNuvZMQyqESRcbrHUsErQ1q+aNhcTdaNqkpa2hskv5kyvVdy43Lu1rfT3rh
+wOs3JgPxQcEifzAR5iS47KV01IuU57gJJQyl0vKdgAsxgpAgTcUlimhIOikRcQIF
+ItgAcgXviHqJFDZhQsUWMgwD2VBHlk0JEcSguvwLTlQDI2AiaDJhEpObKtQsqEOg
+W6qBoGEpQWF1CVeyJdSnUcn0nGiC+umULHvgQU1uKCsvNHVKdjBkobwZs/+O3rfO
+ab9Wryxaf7l0zi68Zcnn6PKamQ93Fiw8vPVE5m1XT8f8bc6h7OzZ7T/Pr5n5bufo
+qoHxO4Wfqlt+TdDpi79Xrd49+CUOhlbl7uve23svdn78ZHLYKd4Yf91V+864XwFP
+1Xpt7Xn9vcM/yos3zIGPOyZCw8cvwU2L7zyoa/+66EzBMl0d6a08dq2hLXvKiooP
+e1pm3Uqn6550578QfWOFmZvlzyo7M8WxkoYi+Kp19Ou5sUeFRf72cOzqlYvvF9wt
+rp5XWbVr7tK+tvFTZN2XpoqV4va8G0Ot2zZ3fpyf8x0vW9868vlqbvL6+Nk3B7zu
+lnBBFDJWU3EkPe3oRFas9HTn2qGXev5vz5g42Q==
+=qS4n
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/reeseovine
+
+==================================================================
