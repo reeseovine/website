@@ -1,8 +1,5 @@
-<h1>Archive</h1>
-<div id="postlistdiv">
-	<ul>
-		<% posts.forEach(function(post){ %>
-			<li><a href="/posts/<%= post.slug %>"><%= post.date %><%= (post.date.length > 0) ? " \u00BB " : "" %><%= post.title %></a></li>
-		<% }); %>
-	</ul>
-</div>
+<section class="card">
+	<h1 class="center">All posts</h1>
+
+	<%- include('recent_posts'); %>
+</section>

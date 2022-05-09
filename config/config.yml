@@ -6,7 +6,7 @@ authorName: "reese sapphire"
 authorLink: "https://twitter.com/reeseovine" # Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
 
 ## Theme customization ##
-themeURL: /style/morningNews.css # Link to a theme file. Can be relative (on this server) or absolute (somewhere on the web)
+# themeURL: /style/morningNews.css # Link to a theme file. Can be relative (on this server) or absolute (somewhere on the web)
 backgroundImage: "" # Optional, uses theme default if left blank.
 
 ## Navigation ##

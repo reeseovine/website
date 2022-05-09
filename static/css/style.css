@@ -1,0 +1,308 @@
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  word-break: break-word;
+  hyphens: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0 !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+/* Variables used throughout these stylesheets */
+@font-face {
+  font-family: "Fira Code";
+  src: url("/font/woff2/FiraCode-Regular.woff2") format("woff2"), url("/font/woff/FiraCode-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Code";
+  src: url("/font/woff2/FiraCode-Bold.woff2") format("woff2"), url("/font/woff/FiraCode-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+html, body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-variant-ligatures: none;
+}
+@media screen and (min-width: 900px) {
+  html, body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 899px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px dashed;
+  transition: all 0.2s;
+}
+
+svg.feather {
+  height: 18px;
+  margin: 0 -2px;
+  transform: translateY(4px);
+}
+
+.blog-post .post-body p, .blog-post .post-body table {
+  hyphens: auto;
+}
+.blog-post .post-body ul, .blog-post .post-body li {
+  list-style: disc;
+  padding-inline-start: 1em;
+}
+
+* {
+  text-align: inherit;
+  box-sizing: inherit;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.left {
+  float: left;
+  margin-right: 16px;
+}
+
+.right {
+  float: right;
+  margin-left: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img.small {
+  width: 200px;
+  height: auto;
+}
+
+body {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-post .post-body {
+  padding: 16px 32px 0;
+}
+.blog-post .post-body p:not(:last-child), .blog-post .post-body ul:not(:last-child), .blog-post .post-body figure:not(:last-child), .blog-post .post-body table:not(:last-child) {
+  margin-bottom: 16px;
+}
+.blog-post .post-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.blog-post .post-body table th, .blog-post .post-body table td {
+  border: 1px solid #dddadf;
+  padding: 16px;
+}
+
+.cards {
+  width: 800px;
+  max-width: calc(100vw - 40px);
+  margin: 32px auto;
+  text-align: left;
+}
+.cards .card {
+  padding: 16px;
+  text-align: left;
+  border-radius: 12px;
+  border-width: 4px;
+  border-style: solid;
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+.cards .card.image {
+  padding: 0;
+}
+.cards .card > :not(article):not(:last-child) {
+  margin-bottom: 8px;
+}
+.cards .card > article:not(:last-child) {
+  margin-bottom: 16px;
+}
+.cards .card .socials {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+}
+.cards .card .socials a {
+  border: none !important;
+}
+
+body {
+  background-color: #dddadf;
+  color: #4e444b;
+}
+
+a {
+  color: #4e444b;
+  border-bottom-color: #969095;
+}
+a:hover {
+  color: #ae016a;
+  border-bottom-color: #ae016a;
+}
+
+.cards .card {
+  background-color: #f6f5f8;
+  border-color: #834890;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #181216;
+    color: #f6f5f8;
+  }
+
+  a {
+    color: #f6f5f8;
+  }
+  a:hover {
+    color: #fc1785;
+    border-bottom-color: #fc1785;
+  }
+
+  .cards .card {
+    background-color: #261c23;
+    border-color: #834890;
+  }
+}
+.sakura {
+  color: #f5a1d4;
+}
+
+/*# sourceMappingURL=style.css.map */

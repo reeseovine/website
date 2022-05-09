@@ -1,5 +1,33 @@
-<h1>Welcome to my blog!</h1>
-<p>I hope you enjoy your time here!</p>
+<section class="card">
+	<h1 class="center">hey, i'm reese!</h1>
+	<p class="center">I write code and design things for fun (and sometimes for work)</p>
+	<ul class="socials">
+		<li><a href="https://github.com/reeseovine" title="github"></a></li>
+		<li><a href="https://mspsocial.net/@reese" rel="me noreferrer" title="mastodon">ﳄ</a></li>
+		<li><a href="#" title="matrix">ﬧ</a></li>
+		<li><a class="email" data-obfuscated="reese(at)ovine(dot)xyz" title="email"></a></li>
+	</ul>
+</section>
 
-<!-- Copy and paste the line below into other templates where you want a "Recent posts" list! -->
-<%- include('recent_posts'); %>
+<section class="card">
+	<!-- <h2 class="center">My work</h2> -->
+	<article class="clearfix">
+		<a href="https://webtoys.ovine.xyz" target="_blank">
+			<img class="small left" src="img/webtoys.png" alt="screenshot of webtoys">
+		</a>
+		<h3><a href="https://github.com/reeseovine/webtoys" target="_blank">webtoys</a></h3>
+		<p class="summary">A handy and easy-to-use collection of tools every developer needs at one point or another. It's a web-based clone of <a href="https://github.com/veler/DevToys" target="_blank">DevToys</a> built with Next.js.</p>
+	</article>
+
+	<article class="clearfix">
+		<a href="https://monkeymafia.space" target="_blank">
+			<img class="small left" src="img/smm.png" alt="screenshot of monkeymafia.space">
+		</a>
+		<h3>Space Monkey Mafia</h3>
+		<p class="summary">I built a static website from the ground up for this local ska band so I could have complete control over the code and design. It's optimized for speed by using a single page and lazy-loading assets.</p>
+	</article>
+</section>
+
+<section class="card">
+	<%- include('recent_posts'); %>
+</section>

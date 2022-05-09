@@ -1,0 +1,49 @@
+/* Variables used throughout these stylesheets */
+
+// Responsive layout
+$breakpoint: 900px !default;
+$small-screen:  'screen and (max-width: #{$breakpoint - 1px})' !default;
+$medium-screen: 'screen and (min-width: #{$breakpoint}) and (max-width: #{$breakpoint - 1px})' !default;
+$large-screen:  'screen and (min-width: #{$breakpoint})' !default;
+
+$gap: 16px;
+@media #{$small-screen}{
+	$gap: 10px;
+}
+@media #{$medium-screen}{
+	$gap: 13px;
+}
+
+// Colors (from my 'nectar' color scheme)
+//Achromatic
+$black: #3a2f36 !default;
+$off-black: #4e444b !default;
+$grey: #969095 !default;
+$light-grey: #dddadf !default;
+$off-white: #f6f5f8 !default;
+$white: #fefefe !default;
+
+//Normal
+$lychee: #fc1785 !default;
+$clementine: #fb6620 !default;
+$banana: #d2af02 !default;
+$kiwi: #6ac527 !default;
+$iris: #2faae5 !default;
+$lilac: #b069de !default;
+
+//Bright
+$sakura: #f5a1d4 !default;
+$cantaloupe: #feb66c !default;
+$pineapple: #ecdc58 !default;
+$honeydew: #b7e14d !default;
+$poppy: #80dafd !default;
+$lavender: #c5a6fb !default;
+
+//Deep
+$raspberry: #ae016a !default;
+$apricot: #d85304 !default;
+$mango: #df951c !default;
+$melon: #489c33 !default;
+$blueberry: #2e6ac6 !default;
+$passiflora: #834890 !default;
+

@@ -4,7 +4,7 @@ You may remember in my last post I said I was starting a project based on [Zonel
 
 ## What is it?
 
-<img src="/images/islet-logo-96.png" alt="islet logo" class="right" height="96">
+<img src="/img/islet-logo-96.png" alt="islet logo" class="right" height="96">
 
 Islet (a small island, pronounced EYE-let) is a tiny blogging framework written in Javascript that you host on a server! It looks pretty much exactly like Zonelets (that's on purpose) so you can migrate without having to rework your themes or what-have-you. You can find the code [on GitHub](https://github.com/katacarbix/islet)!
 

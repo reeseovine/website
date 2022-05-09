@@ -6,24 +6,26 @@
 		<% } else if (locals.config.blogName){ %>
 			<%= config.blogName %>
 		<%_ } %></title>
+
 		<meta name="author" content="<%= config.authorName %>">
+
 		<% if (locals.content.data){ _%>
 			<meta name="description" content="<%= content.data.summary %>">
 		<% } else if (locals.config.metaDescription){ %>
 			<meta name="description" content="<%= config.metaDescription %>">
 		<%_ } %>
-		<!-- This specifies the favicon (little icon on the browser tab) -->
-		<link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
-		<!-- This helps our site look consistent across devices -->
+
+		<link rel="icon" href="/img/favicon.png" type="image/x-icon"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
 		<meta http-equiv=”content-language” content=”<%= config.language %>”/>
-		<!-- Here's the link to our CSS stylesheet! -->
+
 		<% if (config.themeURL){ %>
 			<link href="<%= config.themeURL %>" rel="stylesheet" type="text/css" media="all">
 		<% } else { %>
-			<link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+			<link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
 		<% } %>
+
 		<style>
 #header {
   background-image: url('../images/ovine-48.png');
@@ -36,22 +38,16 @@
 	<body <% if (config.backgroundImage && config.backgroundImage.length > 0){ -%>
 		style="background-image: url('<%= config.backgroundImage %>') !important;"
 	<% } -%>>
-		<div id="container">
-			<div id="header">
-				<%- include('header'); %>
-			</div>
-			<div id="content">
-				<% if (locals.content) { %>
-					<% if (content.include){ %>
-						<%- include(content.include); %>
-					<% } else if (content.raw){ %>
-						<%- content.raw %>
-					<% } %>
+		<main class="cards">
+			<% if (locals.content) { %>
+				<% if (content.include){ %>
+					<%- include(content.include); %>
+				<% } else if (content.raw){ %>
+					<%- content.raw %>
 				<% } %>
-			</div>
-			<div id="footer">
-				<%- include('footer'); %>
-			</div>
-		</div>
+			<% } %>
+
+			<%- include('footer'); %>
+		</main>
 	</body>
 </html>

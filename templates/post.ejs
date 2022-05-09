@@ -1,16 +1,20 @@
-<h1 id="postTitleH1"><%= content.data.title %></h1>
-<h4 id="postDate"><%= content.data.niceDate %></h4>
+<section class="card">
+	<article class="blog-post">
+		<h1 class="center"><%= content.data.title %></h1>
+		<h4 class="center"><%= content.data.niceDate %></h4>
 
-<%- content.data.body %>
+		<div class="post-body"><%- content.data.body %></div>
+	</article>
 
-<div id="nextprev">
-	<% if (posts.length <= 1){ %>
-		<a href="/">Home</a>
-	<% } else if (content.data.index === 0){ %>
-		<a href="/">Home</a> | <a href="/posts/<%= posts[content.data.index + 1].slug %>">Previous Post &raquo;</a>
-	<% } else if (content.data.index === posts.length - 1){ %>
-		<a href="/posts/<%= posts[content.data.index - 1].slug %>">&laquo; Next Post</a> | <a href="/">Home</a>
-	<% } else if (0 < content.data.index && content.data.index < posts.length - 1){ %>
-		<a href="/posts/<%= posts[content.data.index - 1].slug %>">&laquo; Next Post</a> | <a href="/">Home</a> | <a href="/posts/<%= posts[content.data.index + 1].slug %>">Previous Post &raquo;</a>
-	<% } %>
-</div>
+	<div class="center">
+		<% if (posts.length <= 1){ %>
+			<a href="/">Home</a>
+		<% } else if (content.data.index === 0){ %>
+			<a href="/">Home</a> | <a href="/posts/<%= posts[content.data.index + 1].slug %>">Previous Post &raquo;</a>
+		<% } else if (content.data.index === posts.length - 1){ %>
+			<a href="/posts/<%= posts[content.data.index - 1].slug %>">&laquo; Next Post</a> | <a href="/">Home</a>
+		<% } else if (0 < content.data.index && content.data.index < posts.length - 1){ %>
+			<a href="/posts/<%= posts[content.data.index - 1].slug %>">&laquo; Next Post</a> | <a href="/">Home</a> | <a href="/posts/<%= posts[content.data.index + 1].slug %>">Previous Post &raquo;</a>
+		<% } %>
+	</div>
+</section>
