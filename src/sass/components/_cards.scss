@@ -28,10 +28,12 @@
 		.socials {
 			display: flex;
 			justify-content: center;
-			gap: $gap*2;
+			gap: $gap;
 
-			font-family: 'Fira Code', monospace;
-			font-size: 2rem;
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
 
 			a { border: none !important; }
 		}

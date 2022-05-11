@@ -98,7 +98,7 @@ select {
 html, body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-variant-ligatures: none;
+  font-variant-ligatures: all;
 }
 @media screen and (min-width: 900px) {
   html, body {
@@ -156,12 +156,9 @@ svg.feather {
   transform: translateY(4px);
 }
 
-.blog-post .post-body p, .blog-post .post-body table {
-  hyphens: auto;
-}
-.blog-post .post-body ul, .blog-post .post-body li {
-  list-style: disc;
-  padding-inline-start: 1em;
+.publish-date {
+  font-family: "Fira Code", monospace;
+  opacity: 0.8;
 }
 
 * {
@@ -213,21 +210,6 @@ ul, li {
   margin: 0;
 }
 
-.blog-post .post-body {
-  padding: 16px 32px 0;
-}
-.blog-post .post-body p:not(:last-child), .blog-post .post-body ul:not(:last-child), .blog-post .post-body figure:not(:last-child), .blog-post .post-body table:not(:last-child) {
-  margin-bottom: 16px;
-}
-.blog-post .post-body table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.blog-post .post-body table th, .blog-post .post-body table td {
-  border: 1px solid #dddadf;
-  padding: 16px;
-}
-
 .cards {
   width: 800px;
   max-width: calc(100vw - 40px);
@@ -255,12 +237,58 @@ ul, li {
 .cards .card .socials {
   display: flex;
   justify-content: center;
-  gap: 32px;
-  font-family: "Fira Code", monospace;
-  font-size: 2rem;
+  gap: 16px;
+}
+.cards .card .socials svg {
+  width: 2rem;
+  height: 2rem;
 }
 .cards .card .socials a {
   border: none !important;
+}
+
+.blog-post {
+  padding: 16px 32px;
+}
+.blog-post .post-body {
+  margin-top: 16px;
+}
+.blog-post .post-body p, .blog-post .post-body ul, .blog-post .post-body figure, .blog-post .post-body table {
+  hyphens: auto;
+}
+.blog-post .post-body p:not(:last-child), .blog-post .post-body ul:not(:last-child), .blog-post .post-body figure:not(:last-child), .blog-post .post-body table:not(:last-child) {
+  margin-bottom: 16px;
+}
+.blog-post .post-body ul, .blog-post .post-body li {
+  list-style: disc;
+  padding-inline-start: 1em;
+}
+.blog-post .post-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.blog-post .post-body table th, .blog-post .post-body table td {
+  padding: 16px;
+}
+@media (prefers-color-scheme: light) {
+  .blog-post .post-body table th, .blog-post .post-body table td {
+    border: 1px solid #dddadf;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .blog-post .post-body table th, .blog-post .post-body table td {
+    border: 1px solid #969095;
+  }
+}
+
+.post-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Fira Code", monospace;
+  text-align: center;
+}
+.post-nav a {
+  border: none;
 }
 
 body {

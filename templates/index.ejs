@@ -49,5 +49,13 @@
 
 			<%- include('footer'); %>
 		</main>
+
+		<script type="text/javascript">
+			// deobfuscate email addresses (scraper deterrent)
+			for (var a of document.getElementsByClassName('email')){
+				let address = a.getAttribute('data-obfuscated').replace(/\(at\)/gi, '@').replace(/\(dot\)/gi, '.');
+				a.href = 'mailto:' + address;
+			}
+		</script>
 	</body>
 </html>

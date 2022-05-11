@@ -1,8 +1,8 @@
-<% for (let i = 0; i < posts.length && i < config.recentPostsCutoff; i++){ %>
+<% for (let i = 0; i < posts.length && (locals.noLimit || i < config.recentPostsCutoff); i++){ %>
 	<% let post = posts[i]; %>
 
 	<article>
-		<h3 class="inline"><a href="/posts/<%= post.slug %>"><%= post.title %></a></h3> <em class="publish-date"><%= post.date %></em>
-		<p class="summary">My new year's resolution for 2021 was to *de-google* my life. Here's how it went!</p>
+		<h2 class="inline"><a href="/posts/<%= post.slug %>"><%= post.title %></a></h2> <em class="publish-date"><%= post.date %></em>
+		<!-- <p class="summary"></p> -->
 	</article>
 <% } %>

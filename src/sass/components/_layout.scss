@@ -38,23 +38,3 @@ ul, li {
 	padding: 0;
 	margin: 0;
 }
-
-.blog-post .post-body {
-	padding: $gap $gap*2 0;
-
-	p, ul, figure, table {
-		&:not(:last-child) {
-			margin-bottom: $gap;
-		}
-	}
-
-	table {
-		width: 100%;
-		border-collapse: collapse;
-
-		th, td {
-			border: 1px solid $light-grey;
-			padding: $gap;
-		}
-	}
-}

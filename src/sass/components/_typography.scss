@@ -17,7 +17,7 @@
 html, body {
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
-	font-variant-ligatures: none;
+	font-variant-ligatures: all;
 	@media #{$large-screen} {
 		font-size: 18px;
 	}
@@ -54,13 +54,7 @@ svg.feather {
 	transform: translateY(4px);
 }
 
-.blog-post .post-body {
-	p, table {
-		hyphens: auto;
-	}
-
-	ul, li {
-		list-style: disc;
-		padding-inline-start: 1em;
-	}
+.publish-date {
+	font-family: 'Fira Code', monospace;
+	opacity: 0.8;
 }

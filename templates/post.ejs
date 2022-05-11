@@ -1,20 +1,24 @@
 <section class="card">
 	<article class="blog-post">
-		<h1 class="center"><%= content.data.title %></h1>
-		<h4 class="center"><%= content.data.niceDate %></h4>
+		<h1 class="center post-title"><%= content.data.title %></h1>
+		<h4 class="center publish-date"><%= content.data.niceDate %></h4>
 
 		<div class="post-body"><%- content.data.body %></div>
 	</article>
 
-	<div class="center">
-		<% if (posts.length <= 1){ %>
-			<a href="/">Home</a>
-		<% } else if (content.data.index === 0){ %>
-			<a href="/">Home</a> | <a href="/posts/<%= posts[content.data.index + 1].slug %>">Previous Post &raquo;</a>
-		<% } else if (content.data.index === posts.length - 1){ %>
-			<a href="/posts/<%= posts[content.data.index - 1].slug %>">&laquo; Next Post</a> | <a href="/">Home</a>
-		<% } else if (0 < content.data.index && content.data.index < posts.length - 1){ %>
-			<a href="/posts/<%= posts[content.data.index - 1].slug %>">&laquo; Next Post</a> | <a href="/">Home</a> | <a href="/posts/<%= posts[content.data.index + 1].slug %>">Previous Post &raquo;</a>
-		<% } %>
+	<div class="post-nav">
+		<div>
+			<% if (content.data.index < posts.length - 1){ %>
+				<a href="/posts/<%= posts[content.data.index + 1].slug %>">&lt;- Previous Post</a>
+			<% } %>
+		</div>
+
+		<div><a href="/">Home</a></div>
+
+		<div>
+			<% if (0 < content.data.index){ %>
+				<a href="/posts/<%= posts[content.data.index - 1].slug %>">Next Post -&gt;</a>
+			<% } %>
+		</div>
 	</div>
 </section>
