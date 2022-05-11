@@ -1,18 +1,13 @@
 /* Variables used throughout these stylesheets */
 
 // Responsive layout
-$breakpoint: 900px !default;
-$small-screen:  'screen and (max-width: #{$breakpoint - 1px})' !default;
-$medium-screen: 'screen and (min-width: #{$breakpoint}) and (max-width: #{$breakpoint - 1px})' !default;
-$large-screen:  'screen and (min-width: #{$breakpoint})' !default;
-
-$gap: 16px;
-@media #{$small-screen}{
-	$gap: 10px;
-}
-@media #{$medium-screen}{
-	$gap: 13px;
-}
+$breakpoint-small: 540px !default;
+$breakpoint-medium: 1024px !default;
+$breakpoint-large: 1440px !default;
+$small: 'screen and (min-width: #{$breakpoint-small})' !default;
+$medium: 'screen and (min-width: #{$breakpoint-medium})' !default;
+$large: 'screen and (min-width: #{$breakpoint-large})' !default;
+$gap: 1rem;
 
 // Colors (from my 'nectar' color scheme)
 //Achromatic

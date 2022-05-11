@@ -1,7 +1,12 @@
 .cards {
 	width: 800px;
-	max-width: calc(100vw - 40px);
-	margin: $gap*2 auto;
+	max-width: calc(100vw - $gap*2);
+	margin: $gap auto;
+
+	@media #{$small} {
+		max-width: calc(100vw - $gap*4);
+		margin: $gap*2 auto;
+	}
 
 	text-align: left;
 
@@ -29,6 +34,8 @@
 			display: flex;
 			justify-content: center;
 			gap: $gap;
+
+			margin-top: $gap;
 
 			svg {
 				width: 2rem;

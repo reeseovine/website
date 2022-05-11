@@ -1,5 +1,8 @@
 .blog-post {
-	padding: $gap $gap*2;
+	padding: $gap 0;
+	@media #{$small} {
+		padding: $gap $gap*2;
+	}
 
 	.post-body {
 		margin-top: $gap;

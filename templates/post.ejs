@@ -9,7 +9,7 @@
 	<div class="post-nav">
 		<div>
 			<% if (content.data.index < posts.length - 1){ %>
-				<a href="/posts/<%= posts[content.data.index + 1].slug %>">&lt;- Previous Post</a>
+				<a href="/posts/<%= posts[content.data.index + 1].slug %>" aria-label="Previous post">&lt;-<span class="hide sm:inline"> Previous post</span></a>
 			<% } %>
 		</div>
 
@@ -17,7 +17,7 @@
 
 		<div>
 			<% if (0 < content.data.index){ %>
-				<a href="/posts/<%= posts[content.data.index - 1].slug %>">Next Post -&gt;</a>
+				<a href="/posts/<%= posts[content.data.index - 1].slug %>" aria-label="Next post"><span class="hide sm:inline">Next post </span>-&gt;</a>
 			<% } %>
 		</div>
 	</div>
