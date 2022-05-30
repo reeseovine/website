@@ -1,6 +1,7 @@
 const fsx = require('fs-extra')
 const path = require('path')
 const fetch = require('node-fetch')
+const sass = require('sass')
 
 const helpers = require('./helpers.js')
 
@@ -79,6 +80,19 @@ let main = async () => {
 
 	// render 404 page
 	await render(app, '/404', '404')
+
+	// render stylesheet
+	let css = sass.compile('src/sass/style.scss', { style: 'compressed' })
+	await fsx.emptyDir('static/css')
+	await fsx.writeFile('static/css/style.css', css.css.toString(), (err, res) => {
+		if (err) {
+			console.error(`Error saving static/css/style.css:\n${err}`)
+		} else {
+			console.log(
+				`rendered:  src/sass/style.scss  ->  static/css/style.css`
+			)
+		}
+	})
 
 	// copy everything inside static/ to dist/
 	await fsx.copy('static/', 'dist/')
