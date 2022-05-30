@@ -1,4 +1,38 @@
-<section class="card">
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>			Home
+		</title>
+
+		<meta name="author" content="reese sapphire">
+
+		
+			<meta name="description" content="Hey, I&#39;m reese! This is my personal website where you can find my code projects and writings.">
+
+
+		<link rel="icon" href="/img/favicon.png" type="image/x-icon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta http-equiv=”content-language” content=”en-US”/>
+
+		
+			<link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+		
+
+		<style>
+#header {
+  background-image: url('../images/ovine-48.png');
+	background-position: right 12px bottom;
+	background-repeat: no-repeat;
+  padding: 0.8em 72px 0.8em 0;
+}
+		</style>
+	</head>
+	<body >
+		<main class="cards">
+			
+				
+					<section class="card">
 	<h1 class="center">hey, i'm reese!</h1>
 	<p class="center">I write code and design things for fun (and sometimes for work).</p>
 	<ul class="socials" aria-label="Contact me">
@@ -44,7 +78,54 @@
 </section>
 
 <section class="card" aria-label="Blog articles">
-	<%- include('recent_posts'); %>
+	
+	
+
+	<article>
+		<h2 class="inline"><a href="/posts/2021-12-31-2021&#39;s-resolution-retrospective">2021&#39;s resolution retrospective</a></h2> <em class="publish-date">2021-12-31</em>
+		<!-- <p class="summary"></p> -->
+	</article>
+
+	
+
+	<article>
+		<h2 class="inline"><a href="/posts/2021-12-22-introducing-islet">Introducing... Islet!</a></h2> <em class="publish-date">2021-12-22</em>
+		<!-- <p class="summary"></p> -->
+	</article>
+
+	
+
+	<article>
+		<h2 class="inline"><a href="/posts/2021-12-16-Hello,-world!">Hello, world!</a></h2> <em class="publish-date">2021-12-16</em>
+		<!-- <p class="summary"></p> -->
+	</article>
+
+
 
 	<a href="/archive">More...</a>
 </section>
+
+				
+			
+
+			<div id="footer" class="card">
+	<span>
+		my personal site is built with <a href="https://github.com/katacarbix/islet">islet</a>!
+	</span>
+	<span>
+		<a href="https://github.com/reeseovine/website">source code</a> &#x2219;
+		<a href="/feed.rss">RSS</a>
+	</span>
+</div>
+
+		</main>
+
+		<script type="text/javascript">
+			// deobfuscate email addresses (scraper deterrent)
+			for (var a of document.getElementsByClassName('email')){
+				let address = a.getAttribute('data-obfuscated').replace(/\(at\)/gi, '@').replace(/\(dot\)/gi, '.');
+				a.href = 'mailto:' + address;
+			}
+		</script>
+	</body>
+</html>

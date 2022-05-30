@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+<channel>
+	<title>reese</title>
+	<description>Hey, I&#39;m reese! This is my personal website where you can find my code projects and writings.</description>
+	<language>en-US</language>
+	<pubDate>Fri, 31 Dec 2021 00:00:00 GMT</pubDate>
+
+			<atom:link href="https://reese.ovine.xyz/feed.rss" rel="self" type="application/rss+xml" />
+		<link>https://reese.ovine.xyz</link>
+	
+	<image>
+		<url>https://reese.ovine.xyz/img/favicon.png</url>
+		<title>reese</title>
+		<link>https://reese.ovine.xyz</link>
+	</image>
+
+	
+		<item>
+			<title>2021&#39;s resolution retrospective</title>
+			<link>https://reese.ovine.xyz/posts/2021-12-31-2021&#39;s-resolution-retrospective</link>
+			<guid isPermaLink="false">2021-12-31-2021&#39;s-resolution-retrospective</guid>
+			<pubDate>Fri, 31 Dec 2021 00:00:00 GMT</pubDate>
+			<description>&lt;p&gt;It sounds kinda dorky but my new year&amp;#39;s resolution for 2021 was to &lt;em&gt;de-google&lt;/em&gt; my life. I had built up a heavy dependence on Google products since I was a teenager from being an avid Android fan and kept all my work from middle school through college in Drive. I&amp;#39;ve come to realize in adulthood that Google as a company kinda sucks but I haven&amp;#39;t had the courage to leave until a year ago. Now that the year has come to an end, it&amp;#39;s time to see how I did!&lt;/p&gt;
+&lt;p&gt;Essentially, my plan was to find an alternative each of their services until I was free. With my COVID-19 stimulus money I was able to build a new computer which I have been using with Docker to host microservices from home, many of which are Google app replacements. The first thing I installed was &lt;a href=&#34;https://searx.me&#34;&gt;Searx&lt;/a&gt; which is a &lt;em&gt;metasearch engine&lt;/em&gt;. It aggregates results from a bunch of different search engines, including Google if you choose. You can set preferences for which search engines you want it to use, and I have Google turned off in mine.&lt;/p&gt;
+&lt;p&gt;Often if you are looking for self-hostable all-in-one Google service replacements, the top suggestions you&amp;#39;ll hear about most are Nextcloud and Owncloud. Indeed, they are both fine solutions if you aren&amp;#39;t looking to spend too much time building something yourself. Nextcloud has the ability to replace Drive, Photos, Gmail, Calendar, Contacts, and more with a built-in add-on browser. I gave it a try but it wasn&amp;#39;t really for me for a few reasons, but mainly I kept breaking something when I was just trying to do some simple configuration. That and the lackluster selection of add-ons pushed me to find individual alternatives that each do one thing well.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ll just give you a brief list of the rest:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Google app&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Replacement&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Drive&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://www.seafile.com&#34;&gt;Seafile&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Docs+Sheets+Slides&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://www.onlyoffice.com&#34;&gt;OnlyOffice&lt;/a&gt; (able to &lt;a href=&#34;https://manual.seafile.com/deploy/only_office/&#34;&gt;integrate with Seafile&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Gmail&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://migadu.com&#34;&gt;Migadu&lt;/a&gt; (email service), Thunderbird and &lt;a href=&#34;https://f-droid.org/packages/security.pEp/&#34;&gt;pEp&lt;/a&gt; (clients)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Calendar&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://github.com/tomsquest/docker-radicale&#34;&gt;Radicale&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Photos&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://docs.photoprism.app/&#34;&gt;PhotoPrism&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Home&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://www.home-assistant.io/&#34;&gt;Home Assistant&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;Of course, not everything has been easy or has had a perfect 1:1 alternative.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Maps&lt;/strong&gt; - I have tried the few options available on Android: Here WeGo, OsmAnd, Maps.me... Nothing I&amp;#39;ve tried compares to the database of addresses / points of interest and the quality of navigation that Google Maps has. Which is sad.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Youtube&lt;/strong&gt; - I like to go through rabbit holes of niche artisan videos to help me fall asleep, and their volume of content and recommendation algorithm caters to that need. Youtube is far from perfect though, and I&amp;#39;d be happy to switch to something better if it were brought to my attention.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Last thing: I have always been an Android user and I&amp;#39;m not about to switch to iPhone, so I flashed &lt;a href=&#34;https://lineageos.org&#34;&gt;LineageOS&lt;/a&gt;, the successor to CyanogenMod, onto my phone. Yes it&amp;#39;s still based on Android but it isn&amp;#39;t as integrated with Google. It doesn&amp;#39;t require you to sign in and it doesn&amp;#39;t even come with any Google apps installed, though I &lt;em&gt;did&lt;/em&gt; install Play Services afterwards since way too many apps depend on them to be able to work at all.&lt;/p&gt;
+&lt;p&gt;If you&amp;#39;re considering de-googling yourself too, keep in mind that it has taken me a &lt;em&gt;year&lt;/em&gt; to get to this point; I don&amp;#39;t expect you to make the jump all at once. You&amp;#39;re more than welcome to reach out to me and discuss further about anything mentioned in this post!&lt;/p&gt;
+&lt;h2 id=&#34;looking-forward&#34;&gt;Looking forward&lt;/h2&gt;
+&lt;p&gt;Now that I&amp;#39;ve mostly broken free from the shackles of the big G, I&amp;#39;d like to maybe try not being so attached to my electronics all the time and connect more with nature. When I was reading through the Zonelets website, Marina mentioned the author Jenny Odell who has some really neat (in my opinion) philosophy on taking breaks from social media and being more present and attentive to your surroundings. She has written a book titled &lt;em&gt;How to do Nothing&lt;/em&gt; (I haven&amp;#39;t read it yet) and has an essay-length &lt;a href=&#34;https://medium.com/@the_jennitaur/how-to-do-nothing-57e100f59bbb&#34;&gt;keynote transcript&lt;/a&gt; on Medium that you should definitely check out. I&amp;#39;ll be spending the next few weeks figuring out how to start applying these concepts to my life.&lt;/p&gt;
+&lt;p&gt;Until next time! I&amp;#39;ll see you in 2022. 🎉&lt;/p&gt;
+</description>
+		</item>
+	
+		<item>
+			<title>Introducing... Islet!</title>
+			<link>https://reese.ovine.xyz/posts/2021-12-22-introducing-islet</link>
+			<guid isPermaLink="false">2021-12-22-introducing-islet</guid>
+			<pubDate>Wed, 22 Dec 2021 00:00:00 GMT</pubDate>
+			<description>
+&lt;p&gt;You may remember in my last post I said I was starting a project based on &lt;a href=&#34;https://zonelets.net&#34;&gt;Zonelets&lt;/a&gt; which would turn it into a server-based website with a few extra features. If you haven&amp;#39;t noticed yet, this blog has now been moved over to Islet! Look at the footer if you don&amp;#39;t believe me 😉&lt;/p&gt;
+&lt;h2 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h2&gt;
+&lt;img src=&#34;/img/islet-logo-96.png&#34; alt=&#34;islet logo&#34; class=&#34;right&#34; height=&#34;96&#34;&gt;
+
+&lt;p&gt;Islet (a small island, pronounced EYE-let) is a tiny blogging framework written in Javascript that you host on a server! It looks pretty much exactly like Zonelets (that&amp;#39;s on purpose) so you can migrate without having to rework your themes or what-have-you. You can find the code &lt;a href=&#34;https://github.com/katacarbix/islet&#34;&gt;on GitHub&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;features--anti-features&#34;&gt;Features &amp;amp; anti-features&lt;/h2&gt;
+&lt;p&gt;So now you may be wondering, what&amp;#39;s different about it? Well I&amp;#39;m glad you asked. Here&amp;#39;s a comprehensive list of the added features and improvements over Zonelets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Templating&lt;/strong&gt; - Instead of having full HTML pages that you need to copy and paste whenever you want to make a new post, you now have &amp;quot;building blocks&amp;quot; that allow you to reuse any part of the page, keeping duplicate code to a minimum. Zonelets already partially does this by inserting the header, footer, and page title on the fly; however if you wanted to change the CSS theme or add a comment section widget you would have to make that change on &lt;em&gt;every single page&lt;/em&gt;. These templates create the &amp;quot;structure&amp;quot; of the page but not the actual blog posts&amp;#39; contents, so you could avoid ever having to touch them if you don&amp;#39;t want to.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown&lt;/strong&gt; - Zonelets encourages writing in plain HTML and makes it easy to learn by including an HTML cheat sheet that&amp;#39;s also an example of a blog post. I have plenty of experience writing HTML but I personally feel Markdown is easier to write and modify without accidentally breaking something (i.e. mismatching opening/closing tags). Islet allows you to write blog posts in whichever markup language you prefer, and does not limit you if you, for example, start writing in Markdown and later decide to add some HTML. Just give your post file a &amp;quot;.md&amp;quot; extension and you&amp;#39;re golden!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSS feed&lt;/strong&gt; - Not everyone uses or cares about RSS feeds, but if you do it&amp;#39;s there! The only extra configuration that&amp;#39;s required is to put a valid URL to your blog in the config file. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Javascript not required in the browser&lt;/strong&gt; - Some web browsers block Javascript or don&amp;#39;t support it at all. Moving the code that&amp;#39;s required for Zonelets to work to a server means more visitors&amp;#39; web browsers will be able to display your blog properly!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Phew! Sounds great, right? Well... there are still reasons you might want to use Zonelets instead of Islet, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;It needs a server to work&lt;/strong&gt; for the same reason as the point above. The word &amp;quot;server&amp;quot; might invoke the image of a large, expensive datacenter with cables running everywhere, but that doesn&amp;#39;t have to be the case. Islet is small and lightweight enough that you could host it from home on an old laptop or a &lt;a href=&#34;https://www.raspberrypi.com/&#34;&gt;cheap credit card-sized computer&lt;/a&gt;! There are also cheap or even free (to an extent) remote hosting options you could consider if you don&amp;#39;t have that option. I&amp;#39;ll compile a list of these to include with the Islet documentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editing the Islet code can be a &lt;em&gt;biiiit&lt;/em&gt; more advanced&lt;/strong&gt; - The neat thing about Zonelets is that it&amp;#39;s just a few HTML/CSS/Javascript files you can modify with just a little bit of background knowledge. Islet complicates this a little bit by adapting it to NodeJS, which may look similar but works a bit differently than JS written for a web browser. I think it&amp;#39;s worth looking around and figuring out how it works on your own; I promise it&amp;#39;s not too complicated!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The next feature I want to work on is the ability to render a static version of your blog on your computer which can then be hosted anywhere that allows static sites! If you chose this route for hosting you would have to re-render any time you make updates or publish new posts and then reupload all the files. The benefit is that it wouldn&amp;#39;t require a server which would open your options to free static hosting (like Neocities).&lt;/p&gt;
+&lt;h2 id=&#34;concluding-remarks&#34;&gt;Concluding remarks&lt;/h2&gt;
+&lt;p&gt;I hope people will find Islet to be useful. I really like the idea of choosing a small DIY blogging framework to write with instead of relying on overpowered one-size-fits-all options like Wordpress or Squarespace.&lt;/p&gt;
+&lt;p&gt;I don&amp;#39;t want to overshadow Zonelets with this project. I will continue to mention it in any documentation for Islet and donate 50% of any monetary support I receive from this project to Marina.&lt;/p&gt;
+&lt;p&gt;Thanks for reading! Bye!&lt;/p&gt;
+&lt;p&gt;🌴&lt;/p&gt;
+</description>
+		</item>
+	
+		<item>
+			<title>Hello, world!</title>
+			<link>https://reese.ovine.xyz/posts/2021-12-16-Hello,-world!</link>
+			<guid isPermaLink="false">2021-12-16-Hello,-world!</guid>
+			<pubDate>Thu, 16 Dec 2021 00:00:00 GMT</pubDate>
+			<description>&lt;p&gt;Hi there!&lt;/p&gt;
+&lt;p&gt;This blog is where I&#39;ll (try to) write in longer form about the things I&#39;m interested in. Lately I&#39;ve been feeling restricted by the format of Twitter and other microblogging social media websites, thus the desire to start this &lt;em&gt;macro&lt;/em&gt;blog! I&#39;d also like to try breaking away from feeling the need for every thought I have to receive engagement, and instead putting them somewhere where even if people read them I won&#39;t even know. The thought of that seems freeing.&lt;/p&gt;
+&lt;p&gt;If you don&#39;t know me, I&#39;m reese! I tend to do lots of different things, mostly with computers, including programming, web design, graphic design, art, talking with my friends, 3D printing, maintaining my home server, fucking around with Linux, and whatever else I&#39;m feeling like doing at any given moment. My identity is important to me and deeply informs my political outlook. I&#39;m 24, trans + non-binary, deaf, and I have a genetic condition which limits a lot of what I can do. I used to be more interested in debating politics and discussing theory but I really don&#39;t have much energy or patience for it these days.&lt;/p&gt;
+&lt;p&gt;I tend to want to talk about the things that I&#39;ve been working on, such as this blog. Though a bit rough around the edges, &lt;a href=&#34;https://zonelets.net&#34; target=&#34;_blank&#34;&gt;Zonelet&lt;/a&gt; seems like a really fun idea to me. As of writing, this blog is built directly on top of the base code written by Marina Kittaka. I&#39;m in the process of creating a fork with the goal of converting it to a server-side site which I will eventually migrate this blog to. I&#39;m aware this kind of breaks the spirit of zonelets being static HTML/CSS/Javascript that can be hosted anywhere, but my intention is to make something that&#39;s slightly easier to maintain in the long run with the help of a templating engine. I&#39;m also going to add some other niceties afforded by server rendering such as an RSS feed and Markdown post authoring. However I&#39;m not going to add &lt;em&gt;too&lt;/em&gt; much, like a database or user dashboard. Still simple, just a bit more polished. If you don&#39;t like it, zonelet is still there!&lt;/p&gt;
+&lt;p&gt;That&#39;s all for now! If you&#39;re interested in keeping up I&#39;ll post links to &lt;a href=&#34;https://twitter.com/reeseovine&#34; target=&#34;_blank&#34;&gt;my Twitter&lt;/a&gt; whenever I make a new post.&lt;/p&gt;
+</description>
+		</item>
+	
+
+	</channel>
+</rss>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>			Introducing... Islet!
+		</title>
+
+		<meta name="author" content="reese sapphire">
+
+					<meta name="description" content="You may remember in my last post I said I was starting a project based on Zonelets which would turn it into a server-based website with a few extra features. If you haven&#39;t noticed yet, this blog has now been moved over to Islet! Look at the footer if you don&#39;t believe me 😉  ...">
+		
+
+		<link rel="icon" href="/img/favicon.png" type="image/x-icon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta http-equiv=”content-language” content=”en-US”/>
+
+		
+			<link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+		
+
+		<style>
+#header {
+  background-image: url('../images/ovine-48.png');
+	background-position: right 12px bottom;
+	background-repeat: no-repeat;
+  padding: 0.8em 72px 0.8em 0;
+}
+		</style>
+	</head>
+	<body >
+		<main class="cards">
+			
+				
+					<section class="card">
+	<article class="blog-post">
+		<h1 class="center post-title">Introducing... Islet!</h1>
+		<h4 class="center publish-date">December 22nd, 2021</h4>
+
+		<div class="post-body">
+<p>You may remember in my last post I said I was starting a project based on <a href="https://zonelets.net">Zonelets</a> which would turn it into a server-based website with a few extra features. If you haven&#39;t noticed yet, this blog has now been moved over to Islet! Look at the footer if you don&#39;t believe me 😉</p>
+<h2 id="what-is-it">What is it?</h2>
+<img src="/img/islet-logo-96.png" alt="islet logo" class="right" height="96">
+
+<p>Islet (a small island, pronounced EYE-let) is a tiny blogging framework written in Javascript that you host on a server! It looks pretty much exactly like Zonelets (that&#39;s on purpose) so you can migrate without having to rework your themes or what-have-you. You can find the code <a href="https://github.com/katacarbix/islet">on GitHub</a>!</p>
+<h2 id="features--anti-features">Features &amp; anti-features</h2>
+<p>So now you may be wondering, what&#39;s different about it? Well I&#39;m glad you asked. Here&#39;s a comprehensive list of the added features and improvements over Zonelets:</p>
+<ul>
+<li><strong>Templating</strong> - Instead of having full HTML pages that you need to copy and paste whenever you want to make a new post, you now have &quot;building blocks&quot; that allow you to reuse any part of the page, keeping duplicate code to a minimum. Zonelets already partially does this by inserting the header, footer, and page title on the fly; however if you wanted to change the CSS theme or add a comment section widget you would have to make that change on <em>every single page</em>. These templates create the &quot;structure&quot; of the page but not the actual blog posts&#39; contents, so you could avoid ever having to touch them if you don&#39;t want to.</li>
+<li><strong>Markdown</strong> - Zonelets encourages writing in plain HTML and makes it easy to learn by including an HTML cheat sheet that&#39;s also an example of a blog post. I have plenty of experience writing HTML but I personally feel Markdown is easier to write and modify without accidentally breaking something (i.e. mismatching opening/closing tags). Islet allows you to write blog posts in whichever markup language you prefer, and does not limit you if you, for example, start writing in Markdown and later decide to add some HTML. Just give your post file a &quot;.md&quot; extension and you&#39;re golden!</li>
+<li><strong>RSS feed</strong> - Not everyone uses or cares about RSS feeds, but if you do it&#39;s there! The only extra configuration that&#39;s required is to put a valid URL to your blog in the config file. </li>
+<li><strong>Javascript not required in the browser</strong> - Some web browsers block Javascript or don&#39;t support it at all. Moving the code that&#39;s required for Zonelets to work to a server means more visitors&#39; web browsers will be able to display your blog properly!</li>
+</ul>
+<p>Phew! Sounds great, right? Well... there are still reasons you might want to use Zonelets instead of Islet, such as:</p>
+<ul>
+<li><strong>It needs a server to work</strong> for the same reason as the point above. The word &quot;server&quot; might invoke the image of a large, expensive datacenter with cables running everywhere, but that doesn&#39;t have to be the case. Islet is small and lightweight enough that you could host it from home on an old laptop or a <a href="https://www.raspberrypi.com/">cheap credit card-sized computer</a>! There are also cheap or even free (to an extent) remote hosting options you could consider if you don&#39;t have that option. I&#39;ll compile a list of these to include with the Islet documentation.</li>
+<li><strong>Editing the Islet code can be a <em>biiiit</em> more advanced</strong> - The neat thing about Zonelets is that it&#39;s just a few HTML/CSS/Javascript files you can modify with just a little bit of background knowledge. Islet complicates this a little bit by adapting it to NodeJS, which may look similar but works a bit differently than JS written for a web browser. I think it&#39;s worth looking around and figuring out how it works on your own; I promise it&#39;s not too complicated!</li>
+</ul>
+<p>The next feature I want to work on is the ability to render a static version of your blog on your computer which can then be hosted anywhere that allows static sites! If you chose this route for hosting you would have to re-render any time you make updates or publish new posts and then reupload all the files. The benefit is that it wouldn&#39;t require a server which would open your options to free static hosting (like Neocities).</p>
+<h2 id="concluding-remarks">Concluding remarks</h2>
+<p>I hope people will find Islet to be useful. I really like the idea of choosing a small DIY blogging framework to write with instead of relying on overpowered one-size-fits-all options like Wordpress or Squarespace.</p>
+<p>I don&#39;t want to overshadow Zonelets with this project. I will continue to mention it in any documentation for Islet and donate 50% of any monetary support I receive from this project to Marina.</p>
+<p>Thanks for reading! Bye!</p>
+<p>🌴</p>
+</div>
+	</article>
+
+	<div class="post-nav">
+		<div>
+			
+				<a href="/posts/2021-12-16-Hello,-world!" aria-label="Previous post">&lt;-<span class="hide sm:inline"> Previous post</span></a>
+			
+		</div>
+
+		<div><a href="/">Home</a></div>
+
+		<div>
+			
+				<a href="/posts/2021-12-31-2021&#39;s-resolution-retrospective" aria-label="Next post"><span class="hide sm:inline">Next post </span>-&gt;</a>
+			
+		</div>
+	</div>
+</section>
+
+				
+			
+
+			<div id="footer" class="card">
+	<span>
+		my personal site is built with <a href="https://github.com/katacarbix/islet">islet</a>!
+	</span>
+	<span>
+		<a href="https://github.com/reeseovine/website">source code</a> &#x2219;
+		<a href="/feed.rss">RSS</a>
+	</span>
+</div>
+
+		</main>
+
+		<script type="text/javascript">
+			// deobfuscate email addresses (scraper deterrent)
+			for (var a of document.getElementsByClassName('email')){
+				let address = a.getAttribute('data-obfuscated').replace(/\(at\)/gi, '@').replace(/\(dot\)/gi, '.');
+				a.href = 'mailto:' + address;
+			}
+		</script>
+	</body>
+</html>
