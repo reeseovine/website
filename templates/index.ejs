@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+	<head>
+		<title><% if (locals.pageTitle){ _%>
+			<%= pageTitle %>
+		<% } else if (locals.config.blogName){ %>
+			<%= config.blogName %>
+		<%_ } %></title>
+
+		<meta name="author" content="<%= config.authorName %>">
+
+		<% if (locals.content.data){ _%>
+			<meta name="description" content="<%= content.data.summary %>">
+		<% } else if (locals.config.metaDescription){ %>
+			<meta name="description" content="<%= config.metaDescription %>">
+		<%_ } %>
+
+		<link rel="icon" href="/img/favicon.png" type="image/x-icon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta http-equiv=”content-language” content=”<%= config.language %>”/>
+
+		<% if (config.themeURL){ %>
+			<link href="<%= config.themeURL %>" rel="stylesheet" type="text/css" media="all">
+		<% } else { %>
+			<link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+		<% } %>
+
+		<style>
+#header {
+  background-image: url('../images/ovine-48.png');
+	background-position: right 12px bottom;
+	background-repeat: no-repeat;
+  padding: 0.8em 72px 0.8em 0;
+}
+		</style>
+	</head>
+	<body <% if (config.backgroundImage && config.backgroundImage.length > 0){ -%>
+		style="background-image: url('<%= config.backgroundImage %>') !important;"
+	<% } -%>>
+		<main class="cards">
+			<% if (locals.content) { %>
+				<% if (content.include){ %>
+					<%- include(content.include); %>
+				<% } else if (content.raw){ %>
+					<%- content.raw %>
+				<% } %>
+			<% } %>
+
+			<%- include('footer'); %>
+		</main>
+
+		<script type="text/javascript">
+			// deobfuscate email addresses (scraper deterrent)
+			for (var a of document.getElementsByClassName('email')){
+				let address = a.getAttribute('data-obfuscated').replace(/\(at\)/gi, '@').replace(/\(dot\)/gi, '.');
+				a.href = 'mailto:' + address;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+.github/
+config/
+dist/
+logo/
+node_modules/
+posts/
+.editorconfig
+.gitignore
+Dockerfile
+LICENSE
+README.md
+*.log
