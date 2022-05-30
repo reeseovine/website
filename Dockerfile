@@ -9,9 +9,8 @@ WORKDIR /app
 ADD . .
 
 # Install dependencies
-ENV NODE_ENV=production
-RUN yarn install
+RUN npm --verbose ci --omit=dev
 
 # Start your blog!
-CMD yarn start
+CMD npm start
 EXPOSE 5000
