@@ -6,7 +6,7 @@
   "version": "2.0.1",
   "private": true,
   "scripts": {
-    "dev": "concurrently --names \"node,sass\" --prefix-colors \"green,magenta\" \"nodemon src/index.js\" \"sass -w src/sass/style.scss:static/css/style.css\"",
+    "dev": "concurrently --names \"node,sass\" --prefix-colors \"green,magenta\" \"nodemon src/index.js\" \"sass -w src/sass/style.scss:static/css/style.css -s compressed\"",
     "start": "node src/index.js",
     "build": "node src/render.js",
     "serve": "http-server ./dist"

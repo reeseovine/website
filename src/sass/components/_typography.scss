@@ -48,6 +48,10 @@
        url("/font/woff/FiraCode-Bold.woff") format("woff");
 }
 
+.monospace {
+	font-family: 'Fira Code', monospace;
+}
+
 html, body {
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;

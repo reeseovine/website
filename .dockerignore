@@ -3,6 +3,8 @@ dist/
 logo/
 node_modules/
 posts/
+static/css
+
 .editorconfig
 .gitignore
 Dockerfile

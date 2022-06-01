@@ -3,3 +3,4 @@ node_modules
 
 # runtime-generated files
 dist
+static/css
