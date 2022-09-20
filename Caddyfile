@@ -1,0 +1,4 @@
+reese.ovine.xyz {
+	root * ./dist
+	file_server
+}

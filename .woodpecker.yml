@@ -1,0 +1,13 @@
+pipeline:
+	build:
+		image: node:lts-alpine
+		when:
+			event: push
+			branch: main
+		commands:
+			- npm ci
+			- npm run build
+	deploy:
+		image: alpine
+		commands:
+			- echo "Testing.."

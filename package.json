@@ -25,6 +25,7 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
+    "concurrently": "^7.4.0",
     "nodemon": "^2.0.15"
   },
   "prettier": {
