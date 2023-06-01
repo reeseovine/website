@@ -10,10 +10,10 @@ authorLink: "https://mspsocial.net/@reese" # Enter your website, social media, e
 backgroundImage: "" # Optional, uses theme default if left blank.
 
 ## Navigation ##
-recentPostsCutoff: 5
+recentPostsCutoff: 4
 
 ## Behind the scenes stuff ##
-serverPort: 5000
+serverPort: 3000
 metaDescription: # This description is not directly visible on the page, but it can show up in certain places like search engines.
   "Hey, I'm reese! This is my personal website where you can find my code projects and writings."
 truncateSummaryAt: 280 # Maximum length of the post summary that's used in the meta description tag for blog post pages.

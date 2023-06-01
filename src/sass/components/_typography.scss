@@ -51,6 +51,13 @@
 .monospace {
 	font-family: 'Fira Code', monospace;
 }
+.small {
+	font-size: 0.75em;
+	opacity: 0.8;
+}
+.center {
+	text-align: center;
+}
 
 html, body {
 	font-family: 'Inter', sans-serif;
@@ -66,10 +73,6 @@ html, body {
 	}
 }
 
-.center {
-	text-align: center;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Fira Code', monospace;
 	font-weight: 700;
@@ -82,13 +85,27 @@ h4 { font-size: 1.125rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: 0.9rem; }
 
-a {
+a[href] {
+	font-family: 'Fira Code', monospace;
 	text-decoration: none;
-	border-bottom: 2px dashed;
-	transition: all 0.2s;
+	&:not(.no-underline){
+		border-bottom: 2px dashed;
+	}
 }
 
 .publish-date {
 	font-family: 'Fira Code', monospace;
 	opacity: 0.8;
+}
+
+.post-body {
+	line-height: 1.75;
+}
+
+.mdi {
+	line-height: 0;
+	&, svg {
+		width: 24px;
+		height: 24px;
+	}
 }

@@ -8,7 +8,10 @@
 .inline-block { display: inline-block; }
 .hide { display: none; }
 
-@media #{$small}{ .sm\:inline { display: inline; } }
+// responsive classes
+@media #{$small}{
+	.sm\:inline { display: inline; }
+}
 
 .left {
 	float: left;
@@ -19,12 +22,37 @@
 	float: right;
 	margin-left: $gap;
 }
-
 .clearfix::after {
 	content: '';
 	display: block;
 	clear: both;
 }
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: $gap;
+	> * {
+		display: inline-block;
+		word-wrap: none;
+	}
+}
+.flex-responsive {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	@media #{$small} {
+		align-items: baseline;
+		flex-direction: row;
+		> * {
+			margin: 0;
+		}
+	}
+}
+
 
 body {
 	text-align: center;
@@ -37,31 +65,19 @@ ul, li {
 	margin: 0;
 }
 
-article img.small {
-	display: block;
-	height: auto;
-	width: 180px;
-	max-width: 30vw;
-	margin-left: $gap;
-	float: right;
-	@media #{$small} {
-		float: left;
-		margin-left: 0;
-		margin-right: $gap;
+article {
+	&:not(:last-child), :not(:last-child) {
+		margin-bottom: $gap*0.5;
 	}
-}
-
-#footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-	@media #{$small} {
-		align-items: baseline;
-		flex-direction: row;
-		> * {
-			margin: 0;
+	img.small {
+		display: none;
+		@media #{$small} {
+			display: block;
+			height: auto;
+			float: left;
+			width: 180px;
+			margin-left: 0;
+			margin-right: $gap;
 		}
 	}
 }

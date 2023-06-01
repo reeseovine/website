@@ -4,6 +4,7 @@ body {
 }
 
 a {
+	transition: color 0.2s, border-bottom-color 0.2s;
 	color: $off-black;
 	border-bottom-color: $grey;
 	&:hover {
@@ -12,9 +13,13 @@ a {
 	}
 }
 
-.cards .card {
+.card:not(.image) {
 	background-color: $off-white;
 	border-color: $passiflora;
+}
+.card .title {
+	background-color: $passiflora;
+	color: $off-white;
 }
 
 @media (prefers-color-scheme: dark) {
